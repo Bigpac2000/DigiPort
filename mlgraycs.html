@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DataMan</title>
+<link rel="icon" type="image/x-icon" href="images/GrayECLogoNew.png">
+<style>
+.topnav {
+  overflow: hidden;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #191970;
+  color: white;
+  }
+  
+/*// specific CSS for your menu
+div.topnav.active a { 
+	color: #FF0000; 
+	} 
+	
+ more general CSS
+topnav.active a { 
+	color: #FF0000; 
+	}*/
+
+body {
+  background-image: url('images/HTown.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+  
+h1, h3{
+	color: #010099;
+	font-family:Brush Script MT;
+	font-size:84px;
+	text-align:center;
+	position: relative;
+	animation: mymove 2s infinite;
+	
+}
+
+div{
+	
+
+}
+
+p{
+	color: white;
+	font-size:40px;
+	text-align:center;
+}
+
+img{
+	margin-top: 5%;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+  
+</style>
+<script>
+function changeImage() { 
+      var image = document.getElementById('myImage'); 
+      if (image.src.match("images/schooldaze3")) { 
+        image.src = "images/schooldaze2.jpg"; 
+      } else { 
+        image.src = "images/schooldaze3.jpg"; 
+      } 
+    } 
+
+</script>
+
+<div class="topnav">
+	<a class="scroll" href="about.html">About</a>
+	<a class="scroll" href="contact.html">Contact</a>
+	<a class="scroll" href="works.html">Works</a>
+	<a class="active" class="scroll" href="mlgraycs.html">Home</a>
+</div>
+<meta charset="UTF-8">
+    
+</head>
+
+<body>
+
+<img align="right"; src="images/schooldaze2.jpg"; alt="Big Man on Campus"; width="315"; height="220";></img>
+
+<!--Change Pic Fuction
+<img id="myImage" src="images/schooldaze3.jpg" style="width:100px;height:100px;" onclick="changeImage()"> -->
+<p align="center">Hi, my name is:</p>
+<div><h1>Michael Gray </h1></div>
+<p><br>I am a </p>
+<h3>Web and Database Developer</h3>
+
+
+
+</body>
+</html>
